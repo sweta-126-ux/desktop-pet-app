@@ -69,39 +69,40 @@ A cute virtual desktop pet for Windows that lives on your screen as a friendly f
 
 ---
 
-## 📂 Project Structure
-
-```plaintext
-desktop-cat-companion/
-│
-├── main.py
-│
-├── pet/
-│   ├── cat.py
-│   ├── behavior.py
-│   ├── animations.py
-│   └── interactions.py
-│
-├── ui/
-│   ├── pet_window.py
-│   ├── settings_window.py
-│   └── status_panel.py
-│
-├── assets/
-│   ├── sprites/
-│   ├── sounds/
-│   └── icons/
-│
-├── data/
-│   ├── save.json
-│   └── skins.json
-│
-├── utils/
-│   ├── save_manager.py
-│   └── config.py
-│
-├── requirements.txt
-└── README.md
+##dekstop-pet-app/
+├── main.py                 # Entry point
+├── requirements.txt        # Dependencies
+├── config.json            # Configuration file
+├── README.md              # This file
+├── src/
+│   ├── pet.py            # Main Pet class
+│   ├── animation.py       # Animation system
+│   ├── sprite_manager.py  # Sprite handling
+│   ├── sound_manager.py   # Audio management
+│   ├── ui/
+│   │   ├── main_window.py      # Main application window
+│   │   ├── status_panel.py     # Pet stats display
+│   │   ├── settings_dialog.py  # Settings window
+│   │   └── speech_bubble.py    # Notification bubbles
+│   ├── systems/
+│   │   ├── save_system.py      # Save/load functionality
+│   │   ├── interaction.py      # Pet interactions
+│   │   ├── behavior.py         # Autonomous behaviors
+│   │   ├── achievement.py      # Achievement tracking
+│   │   └── mini_game.py        # Mini-games
+│   ├── utils/
+│   │   ├── constants.py        # Game constants
+│   │   ├── config_manager.py   # Configuration management
+│   │   └── helpers.py          # Utility functions
+│   └── tray/
+│       └── system_tray.py      # System tray integration
+├── tests/
+│   └── test_pet.py       # Unit tests
+├── data/                 # Save files (auto-created)
+└── assets/              # Game assets (auto-created)
+    ├── sprites/
+    ├── sounds/
+    └── skins/
 ```
 
 ---

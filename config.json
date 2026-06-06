@@ -1,0 +1,50 @@
+{
+  "pet": {
+    "name": "Whiskers",
+    "skin": "orange",
+    "size": "medium",
+    "start_x": 100,
+    "start_y": 100
+  },
+  "animation": {
+    "frame_rate": 60,
+    "walk_speed": 50,
+    "animation_speed": 100,
+    "idle_animation_interval": 3000
+  },
+  "behavior": {
+    "enable_autonomous_actions": true,
+    "action_interval": 5000,
+    "follow_cursor": true,
+    "follow_cursor_distance": 200
+  },
+  "ui": {
+    "show_status_panel": true,
+    "show_speech_bubbles": true,
+    "status_panel_opacity": 0.9,
+    "window_opacity": 1.0
+  },
+  "audio": {
+    "master_volume": 0.7,
+    "effects_volume": 0.8,
+    "enable_sounds": true
+  },
+  "stats": {
+    "initial_happiness": 70,
+    "initial_energy": 80,
+    "initial_affection": 60
+  },
+  "save": {
+    "auto_save_interval": 60000,
+    "save_location": "data/pet_data.json"
+  },
+  "performance": {
+    "max_sprites_loaded": 10,
+    "enable_v_sync": true,
+    "reduced_animations_at_low_performance": true
+  },
+  "themes": {
+    "current_theme": "light",
+    "color_scheme": "default"
+  }
+}
